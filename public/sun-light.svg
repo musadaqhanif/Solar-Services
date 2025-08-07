@@ -1,0 +1,38 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sun rays -->
+  <g opacity="0.8">
+    <!-- Vertical rays -->
+    <path d="M60 10 L60 25" stroke="url(#sunGradient)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M60 95 L60 110" stroke="url(#sunGradient)" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Horizontal rays -->
+    <path d="M10 60 L25 60" stroke="url(#sunGradient)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M95 60 L110 60" stroke="url(#sunGradient)" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Diagonal rays -->
+    <path d="M20 20 L30 30" stroke="url(#sunGradient)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M90 90 L100 100" stroke="url(#sunGradient)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M20 100 L30 90" stroke="url(#sunGradient)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M90 30 L100 20" stroke="url(#sunGradient)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Main sun circle -->
+  <circle cx="60" cy="60" r="25" fill="url(#sunGradient)" opacity="0.9"/>
+  
+  <!-- Inner glow -->
+  <circle cx="60" cy="60" r="20" fill="url(#innerGlow)" opacity="0.6"/>
+  
+  <!-- Gradient definitions -->
+  <defs>
+    <radialGradient id="sunGradient" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="50%" stop-color="#FFA500"/>
+      <stop offset="100%" stop-color="#FF8C00"/>
+    </radialGradient>
+    
+    <radialGradient id="innerGlow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFFF00"/>
+      <stop offset="100%" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+</svg> 
