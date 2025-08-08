@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-r from-green-500 to-green-600 text-white pt-12 pb-6">
+    <footer className="bg-gradient-to-r from-green-500 to-green-500 text-white pt-12 pb-6">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
 
         {/* Company Info */}

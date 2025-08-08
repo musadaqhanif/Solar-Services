@@ -16,7 +16,7 @@ import {
       id: 1,
       title: 'Residential Solar Panel Installation',
       category: 'installation',
-      image: '/Projects/maintain.jpg',
+      image: '/Projects/img1.jpg',
       description: 'Expert installation of high-efficiency solar panels for residential properties, tailored to maximize energy production.',
       highlight: [
         'Custom installation by certified technicians in 1-3 days.',
@@ -29,7 +29,7 @@ import {
       id: 2,
       title: 'Commercial Solar Panel Installation',
       category: 'installation',
-      image: '/Projects/installation1.png',
+      image: '/Projects/image.png',
       description: 'Professional installation of solar systems for businesses, designed to reduce energy costs and carbon footprint.',
       highlight: [
         'Scalable solutions for various commercial sizes.',
@@ -42,7 +42,7 @@ import {
       id: 3,
       title: 'Solar System Design & Consultation',
       category: 'design',
-      image: '/Projects/installation1.png',
+      image: '/Projects/img2.jpg',
       description: 'Comprehensive consultation and custom design services to optimize your solar system for energy needs and budget.',
       highlight: [
         'Free site assessment and energy usage analysis.',
@@ -55,7 +55,7 @@ import {
       id: 4,
       title: 'Energy Efficiency Consultation',
       category: 'design',
-      image: '/Projects/installation1.png',
+      image: '/Projects/img3.jpg',
       description: 'Personalized consultation to enhance energy efficiency, integrating solar with your home’s existing systems.',
       highlight: [
         'Evaluation of current energy consumption patterns.',
@@ -68,7 +68,7 @@ import {
       id: 5,
       title: 'Routine Maintenance Services',
       category: 'maintenance',
-      image: '/Projects/installation1.png',
+      image: '/Projects/img4.jpg',
       description: 'Regular maintenance to ensure your solar panels operate at peak efficiency and longevity.',
       highlight: [
         'Annual inspections and cleaning by certified staff.',
@@ -81,7 +81,7 @@ import {
       id: 6,
       title: 'Performance Monitoring Program',
       category: 'maintenance',
-      image: '/Projects/installation1.png',
+      image: '/Projects/img5.jpg',
       description: 'Continuous monitoring of your solar system to optimize performance and provide real-time data.',
       highlight: [
         'Access to a mobile app for energy production tracking.',
