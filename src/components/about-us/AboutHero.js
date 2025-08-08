@@ -1,6 +1,6 @@
 export default function AboutHero() {
   return (
-    <section className="relative w-full h-[100vh]">
+    <section className="relative w-full h-[70vh]">
       <video
         className="object-cover w-full h-full"
         autoPlay

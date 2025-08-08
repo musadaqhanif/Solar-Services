@@ -1,5 +1,5 @@
 import Image from 'next/image';
-
+import Link from 'next/link';
 export default function PricingSection() {
   const plans = [
     {
@@ -52,7 +52,7 @@ export default function PricingSection() {
                 </ul>
               </div>
               <button className="w-full bg-green-600 text-white py-3 rounded-lg hover:bg-green-700 transition duration-300">
-                Get Started
+                <Link href="/contact"> Get Started</Link>
               </button>
             </div>
           ))}

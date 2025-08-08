@@ -4,8 +4,7 @@ import PricingSection from './components/pricing-plan';
 import Clients from './components/clients';
 import HomeServices from './components/Home-Services';
 import ProjectsSlider from './components/ProjectsSlider';
-
-
+import Action from  './components/Call';
 export default function Home() {
   return (
     <div className="min-h-screen">
@@ -18,6 +17,7 @@ export default function Home() {
       <PricingSection />
       <Clients />
       <ProjectsSlider />
+      <Action/>
     </div>
   );
 }

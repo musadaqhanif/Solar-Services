@@ -2,7 +2,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import VideoPreloader from "./components/VideoPreloader";
-
+import Footer from "../app/Footer/page";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -27,6 +27,7 @@ export default function RootLayout({ children }) {
         <VideoPreloader />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

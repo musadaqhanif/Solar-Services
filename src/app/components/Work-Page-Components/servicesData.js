@@ -16,7 +16,7 @@ import {
       id: 1,
       title: 'Residential Solar Panel Installation',
       category: 'installation',
-      image: '/Projects/installation1.png',
+      image: '/Projects/maintain.jpg',
       description: 'Expert installation of high-efficiency solar panels for residential properties, tailored to maximize energy production.',
       highlight: [
         'Custom installation by certified technicians in 1-3 days.',

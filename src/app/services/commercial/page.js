@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useInView } from "react-intersection-observer";
 import { Home, Building2, Clock, Zap, DollarSign, Shield, Battery, Settings, AlertCircle, CheckCircle, HardDrive, Sun, Leaf } from "lucide-react";
 import ImageSlider from "@/app/components/ImageSlider";
-
+import Clients from "../../components/clients";
 // Testimonials data
 const testimonials = [
   {
@@ -434,62 +434,9 @@ export default function CommercialPage() {
       </section>
 
       {/* Customer Testimonials */}
-      <section className="py-16 bg-gradient-to-b from-gray-50 via-green-50 to-white animate-bg-pulse">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4 bg-gradient-to-r from-green-600 to-green-800 bg-clip-text text-transparent">
-              Happy Homeowners
-            </h2>
-            <p className="text-xl text-gray-600">
-              See how our residential solar solutions are transforming homes
-              across Lahore
-            </p>
-          </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className="bg-white/90 rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 border border-green-100/50 group relative overflow-hidden"
-              >
-                <div className="absolute -top-10 -left-10 w-32 h-32 bg-green-400/20 rounded-full animate-pulse-slow blur-xl opacity-50"></div>
-                <div className="relative z-10">
-                  <div className="flex items-center mb-6">
-                    <div className="relative w-16 h-16 mr-6">
-                      <Image
-                        src={testimonial.image}
-                        alt={testimonial.name}
-                        fill
-                        className="rounded-full object-cover border-4 border-green-100 group-hover:border-yellow-200 transition-colors duration-300"
-                        loading="lazy"
-                      />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900">
-                        {testimonial.name}
-                      </h3>
-                      <p className="text-green-600 font-medium">
-                        {testimonial.location}
-                      </p>
-                      <p className="text-yellow-600 font-semibold text-lg">
-                        {testimonial.savings}
-                      </p>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 italic text-lg leading-relaxed mb-4">
-                    &quot;{testimonial.quote}&quot;
-                  </p>
-                  <div className="flex justify-end">
-                    <span className="inline-block bg-green-100/80 text-green-800 text-sm font-semibold px-4 py-2 rounded-full">
-                      Verified Customer
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Clients/>
+
     </div>
   );
 }
