@@ -36,21 +36,18 @@ export default function FAQSection() {
   return (
     <section className="w-full min-h-screen py-12 md:py-24 px-4 sm:px-12 lg:px-18 bg-gray-50 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
       {/* Left Side - Image */}
-      <div className="w-full max-w-md lg:max-w-none lg:w-1/2 flex justify-center">
-        <div className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px]">
-          <Image
-            src="/pic1.webp"
-            alt="Solar FAQ illustration"
-            fill
-            className="rounded-xl shadow-lg object-cover"
-            sizes="(max-width: 1024px) 100vw, 50vw"
-          />
-        </div>
-      </div>
+      <Image
+        src="/FAQ1.jpg"
+        alt="Solar mission illustration"
+        width={500}
+        height={500}
+        className="rounded-xl shadow-lg m-0 p-0"
+        sizes="(max-width: 1024px) 100vw, 50vw"
+      />
 
       {/* Right Side - FAQ */}
       <div className="w-full lg:w-1/2 lg:pl-8 xl:pl-12">
-        <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-green-600 mb-6 md:mb-8">
+        <h2 className="text-2xl md:text-3xl xl:text-3xl font-bold text-green-600 mb-6 md:mb-8">
           Frequently Asked Questions
         </h2>
         <div className="space-y-4">
