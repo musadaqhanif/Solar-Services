@@ -32,7 +32,7 @@ export default function SolarServices() {
               href="/services/resedential"
               className="bg-green-600 text-white font-medium px-6 py-2 rounded-full hover:bg-green-700 transition inline-block"
             >
-              Read more
+              Read More
             </Link>
           </div>
 
