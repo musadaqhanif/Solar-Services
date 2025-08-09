@@ -132,7 +132,7 @@ export default function StatsSection() {
   return (
     <section className="w-full min-h-screen bg-white py-12 md:py-24 px-4 sm:px-6 lg:px-18 flex flex-col justify-center">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-green-600 mb-6 md:mb-8">
+        <h2 className="text-2xl md:text-3xl xl:text-3xl font-bold text-green-600 mb-6 md:mb-8">
           By the Numbers
         </h2>
         <p className="text-gray-600 max-w-3xl mx-auto text-lg md:text-xl mb-12">
@@ -144,10 +144,10 @@ export default function StatsSection() {
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="bg-gray-50 p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100"
+              className="bg-gray-50 p-6 rounded-sm shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100"
             >
               <div className="flex justify-center mb-4">{stat.icon}</div>
-              <p className="text-4xl sm:text-5xl font-bold text-yellow-500 mb-2">
+              <p className="text-3xl sm:text-3xl font-bold text-yellow-500 mb-2">
                 {stat.value}
               </p>
               <h3 className="text-xl font-semibold text-gray-800 mb-2">

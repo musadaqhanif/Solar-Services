@@ -75,9 +75,9 @@ export default function TeamSection() {
 
   const team = [
     {
-      name: "Ayesha Khan",
+      name: "Musadaq Hanif",
       role: "CEO & Founder",
-      img: "/pic1.webp",
+      img: "/musadaq.jpg",
       bio: "Renewable energy expert with 15+ years in solar technology and sustainable business development.",
       socialLinks: [
         { icon: socialIcons.linkedin, url: "#" },
@@ -88,7 +88,7 @@ export default function TeamSection() {
     {
       name: "Hassan Malik",
       role: "CTO",
-      img: "/pic1.webp",
+      img: "/Profile.jpg",
       bio: "Solar engineering specialist focused on innovative panel technologies and energy storage solutions.",
       socialLinks: [
         { icon: socialIcons.linkedin, url: "#" },
@@ -96,7 +96,7 @@ export default function TeamSection() {
       ],
     },
     {
-      name: "Zara Ahmed",
+      name: "Hamza",
       role: "Project Lead",
       img: "/pic1.webp",
       bio: "Oversees installation projects with a focus on efficiency and client satisfaction.",
@@ -106,9 +106,9 @@ export default function TeamSection() {
       ],
     },
     {
-      name: "Rajiv Sharma",
+      name: "Zoha Ashraf",
       role: "Head of R&D",
-      img: "/pic1.webp",
+      img: "/hijab1.webp",
       bio: "Leads our innovation lab developing next-generation solar materials and efficiency improvements.",
       socialLinks: [
         { icon: socialIcons.linkedin, url: "#" },
@@ -118,7 +118,7 @@ export default function TeamSection() {
     {
       name: "Fatima Ali",
       role: "Community Relations",
-      img: "/pic1.webp",
+      img: "/hijab2.webp",
       bio: "Connects communities with solar solutions through education and partnership programs.",
       socialLinks: [
         { icon: socialIcons.linkedin, url: "#" },
@@ -128,7 +128,7 @@ export default function TeamSection() {
     {
       name: "Thomas Chen",
       role: "Operations Director",
-      img: "/pic1.webp",
+      img: "/boy.jpg",
       bio: "Manages supply chain and logistics to ensure timely project delivery worldwide.",
       socialLinks: [
         { icon: socialIcons.linkedin, url: "#" },
@@ -140,7 +140,7 @@ export default function TeamSection() {
   return (
     <section className="w-full bg-gray-50 py-12 md:py-24 px-4 sm:px-6 lg:px-18">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl md:text-4xl xl:text-5xl font-bold text-green-600 mb-6">
+        <h2 className="text-2xl md:text-3xl xl:text-3xl font-bold text-green-600 mb-6">
           Meet Our Team
         </h2>
         <p className="text-gray-600 max-w-3xl mx-auto text-lg mb-12">
