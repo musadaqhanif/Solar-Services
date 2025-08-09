@@ -5,8 +5,8 @@ import Link from "next/link";
 
 export default function SolarServices() {
   return (
-    <section className="relative py-12 px-4 md:px-8 lg:px-16 bg-green-40 isolate">
-      <div className="absolute inset-0 bg-green-300/20 opacity-50 animate-pulse-slow blur-xl -z-10"></div>
+    <section className="relative py-12 px-4 md:px-8 lg:px-16 bg-green-50 isolate">
+      <div className="absolute inset-0 opacity-50 animate-pulse-slow blur-xl -z-10"></div>
       <div className="max-w-7xl mx-auto text-center relative">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Residential */}
@@ -29,7 +29,7 @@ export default function SolarServices() {
               Installations in the heart of Lahore.
             </p>
             <Link
-              href="/services/resedential"
+              href="/services/residential"
               className="bg-green-600 text-white font-medium px-6 py-2 rounded-full hover:bg-green-700 transition inline-block"
             >
               Read More
