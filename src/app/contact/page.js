@@ -44,7 +44,7 @@ export default function ContactUs() {
       <FaEnvelope className="text-lg md:text-xl" />
     </div>
     <div>
-      <p className="text-base md:text-lg font-semibold text-gray-900">Mail for information:</p>
+      <p className="text-base md:text-lg font-semibold text-white">Mail for information:</p>
       <a href="mailto:neurixsolution@gmail.com" className="text-sm md:text-base text-blue-600">neurixsolution@gmail.com</a>
     </div>
   </div>
@@ -56,7 +56,7 @@ export default function ContactUs() {
             <input
               type="text"
               placeholder="Name"
-              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
+              className="w-full text-black border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
             />
             <input
               type="text"

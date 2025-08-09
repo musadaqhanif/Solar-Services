@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function TestimonialSection() {
   return (
-    <section className="relative bg-white py-24 px-4">
+    <section className="relative bg-green-100 py-24 px-4 isolate">
       {/* Decorative Background Circles */}
       <div className="absolute left-0 top-1/4 -z-10 h-32 w-32 bg-gray-100 rounded-full opacity-50 blur-lg" />
       <div className="absolute right-0 bottom-1/4 -z-10 h-40 w-40 bg-gray-100 rounded-full opacity-50 blur-lg" />
@@ -54,7 +54,6 @@ export default function TestimonialSection() {
                 <p className="text-gray-800 font-semibold">Client Name</p>
                 <p className="text-gray-500 italic text-sm">Profession</p>
               </div>
-
             </div>
             <div className="absolute inset-0 bg-white opacity-94" style={{ clipPath: 'inset(0 82% 0 0)' }}></div>
           </div>
@@ -74,7 +73,6 @@ export default function TestimonialSection() {
                   “
                 </span>
               </div>
-
             </div>
             <div className="bg-white rounded-lg shadow-lg px-8 pt-8 pb-8 w-full max-w-lg relative">
               <div className="text-center">
@@ -84,7 +82,6 @@ export default function TestimonialSection() {
                 <p className="text-gray-800 font-semibold">Client Name</p>
                 <p className="text-gray-500 italic text-sm">Profession</p>
               </div>
-
             </div>
           </div>
 
