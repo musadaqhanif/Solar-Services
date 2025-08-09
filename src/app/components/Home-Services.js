@@ -1,9 +1,11 @@
+
+'use client';
 import Image from "next/image";
 import Link from "next/link";
 
 export default function SolarServices() {
   return (
-    <section className="relative py-12 px-4 md:px-8 lg:px-16">
+    <section className="relative py-12 px-4 md:px-8 lg:px-16 bg-green-40 isolate">
       <div className="absolute inset-0 bg-green-300/20 opacity-50 animate-pulse-slow blur-xl -z-10"></div>
       <div className="max-w-7xl mx-auto text-center relative">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -24,8 +26,7 @@ export default function SolarServices() {
             </h3>
             <p className="text-gray-700 mb-4">
               Sympl Energy is one of the leading providers of Residential Solar
-              Installations in the heart of eading providers of Residential
-              Lahore.
+              Installations in the heart of Lahore.
             </p>
             <Link
               href="/services/resedential"
