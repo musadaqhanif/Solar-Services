@@ -40,44 +40,50 @@ export default function ContactUs() {
 
   {/* Email */}
   <div className="flex gap-4 items-start">
-    <div className="bg-green-500 p-3 md:p-4 rounded-full text-white">
+    <div className="bg-green-500 p-3 md:p-4 rounded-full ">
       <FaEnvelope className="text-lg md:text-xl" />
     </div>
     <div>
-      <p className="text-base md:text-lg font-semibold text-white">Mail for information:</p>
+      <p className="text-base md:text-lg font-semibold text-black">Mail for information:</p>
       <a href="mailto:neurixsolution@gmail.com" className="text-sm md:text-base text-blue-600">neurixsolution@gmail.com</a>
     </div>
   </div>
 </div>
 
         {/* Contact Form */}
-        <div className="bg-green-50 rounded-2xl p-8 shadow-sm">
+        <div className="bg-green-50 rounded-2xl p-8 shadow-sm text-black">
           <form className="space-y-4">
-            <input
-              type="text"
-              placeholder="Name"
-              className="w-full text-black border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
-            <input
-              type="text"
-              placeholder="Phone"
-              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
-            <input
-              type="email"
-              placeholder="Email"
-              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
-            <select className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500">
-              <option>Hire a service</option>
-              <option>General Inquiry</option>
-              <option>Support</option>
-            </select>
-            <textarea
-              placeholder="Project details or Query"
-              rows="4"
-              className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
-            />
+          <input
+  type="text"
+  placeholder="Name"
+  className="w-full text-black placeholder-gray-600 border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
+/>
+
+<input
+  type="text"
+  placeholder="Phone"
+  className="w-full text-black placeholder-gray-600 border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
+/>
+
+<input
+  type="email"
+  placeholder="Email"
+  className="w-full text-black placeholder-gray-600 border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
+/>
+
+<select className="w-full placeholder-gray-600 border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500">
+  <option>Hire a service</option>
+  <option>General Inquiry</option>
+  <option>Support</option>
+</select>
+
+<textarea
+  placeholder="Project details or Query"
+  rows="4"
+  className="w-full text-black placeholder-gray-600 border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-green-500"
+/>
+
+
             <button
               type="submit"
               className="w-full bg-green-500 text-white font-bold py-3 rounded-md hover:bg-green-600 transition"

@@ -51,9 +51,9 @@ export default function OurWorkPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="mb-12 text-center"
+          className="mb-12 text-center text-green-600"
         >
-          <SectionHeading title="Our services" highlightWord="services" />
+          <SectionHeading  title="Our " highlightWord="Projects" />
           <p className="mx-auto max-w-2xl text-lg text-gray-600">
             Explore our comprehensive solar installation services designed to power your future with clean energy.
           </p>

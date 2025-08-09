@@ -10,14 +10,16 @@ export default function Home() {
     <div className="min-h-screen">
       <HeroSection />
       <AboutUSection />
-      <div className="py-12">
+      <div className="py-12 bg-white text-black">
         <h2 className="text-4xl font-bold text-center mb-12">Our Services</h2>
         <HomeServices />
       </div>
       <PricingSection />
       <Clients />
       <ProjectsSlider />
+      <div className="py-12 bg-white">
       <Action/>
+      </div>
     </div>
   );
 }
