@@ -42,7 +42,7 @@ export default function SolarServices() {
               Installations in the heart of Lahore.
             </p>
             <Link
-              href="/services/residential"
+              href="/services/resedential"
               className="bg-green-600 text-white font-medium px-6 py-2 rounded-full hover:bg-green-700 transition inline-block"
             >
               Read More

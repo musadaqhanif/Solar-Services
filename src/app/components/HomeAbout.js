@@ -44,10 +44,10 @@ export default function AboutUsSection() {
           </div>
 
           {/* Image Section */}
-          <div className="flex justify-center items-center w-full mb-6">
-            <div className="bg-white rounded-lg shadow-lg overflow-hidden max-w-md w-full">
+          <div className="flex justify-center items-center w-full lg:w-1/2 mb-6">
+            <div className="bg-white rounded-lg shadow-lg overflow-hidden w-full">
               <Image
-                src="/home-about.png"
+                src="/home-about1.png"
                 alt="Solar Panel Installation Team"
                 width={1200}
                 height={800}
