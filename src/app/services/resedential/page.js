@@ -6,7 +6,7 @@ import Link from "next/link";
 import ImageSlider from "@/app/components/ImageSlider";
 import { Zap, DollarSign, Leaf, Home } from "lucide-react";
 import { useInView } from "react-intersection-observer";
-import Clients from '../../components/clients';
+import Clients from "../../components/clients";
 export default function ResidentialPage() {
   const [isVideoLoaded, setIsVideoLoaded] = useState(false);
   const videoRef = useRef(null);
@@ -126,8 +126,8 @@ export default function ResidentialPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative h-screen flex items-start pt-16 sm:pt-20 justify-center overflow-hidden">
-        {/* Background Image */}
+      <section className="relative min-h-[90vh] sm:min-h-screen flex items-center justify-center overflow-hidden pt-28 sm:pt-24 lg:pt-20 pb-16 sm:pb-0">
+        {/* Video Background */}
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/resedential-images/markus-winkler-VX0ZEZSwqnY-unsplash.jpg"
@@ -137,19 +137,19 @@ export default function ResidentialPage() {
             priority
             quality={100}
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-black/60 via-black/40 to-black/70"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-black/50 via-black/30 to-black/60"></div>
         </div>
 
         {/* Content */}
-        <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto mt-8 sm:mt-12">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight drop-shadow-2xl">
+        <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-4xl mx-auto">
+          <h1 className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 sm:mb-6 leading-tight">
             Transform Your Home with
-            <span className="block text-green-400 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text text-transparent animate-pulse">
-              Residential Solar
+            <span className="block text-green-400 bg-gradient-to-r from-green-400 to-green-300 bg-clip-text animate-pulse">
+              Solar Residential
             </span>
           </h1>
 
-          <p className="text-lg sm:text-xl md:text-2xl text-white/95 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed font-medium drop-shadow-lg">
+          <p className="text-sm xs:text-base sm:text-xl md:text-2xl text-white/95 mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed font-medium">
             Power your home with clean, renewable energy and save thousands on
             electricity bills.
             <span className="block mt-2 text-green-300">
@@ -159,13 +159,13 @@ export default function ResidentialPage() {
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center mb-6 sm:mb-8">
             <Link
-              href="/quote"
-              className="group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-xl text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl border border-green-400/30 w-full sm:w-auto"
+              href="/contact"
+              className="group bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white font-semibold py-2 px-4 sm:py-3 sm:px-6 rounded-xl text-xs sm:text-lg w-40 sm:w-auto"
             >
               <span className="flex items-center justify-center gap-2">
-                Get Free Home Quote
+                Get Free Quote
                 <svg
-                  className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform"
+                  className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:translate-x-1 transition-transform"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -179,15 +179,14 @@ export default function ResidentialPage() {
                 </svg>
               </span>
             </Link>
-
             <Link
-              href="/contact"
-              className="group bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-semibold py-3 sm:py-4 px-6 sm:px-8 rounded-xl text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-xl hover:shadow-2xl border border-yellow-400/30 w-full sm:w-auto"
+              href="/about-us"
+              className="group bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white font-semibold py-2 px-4 sm:py-3 sm:px-6 rounded-xl text-xs sm:text-lg w-40 sm:w-auto"
             >
               <span className="flex items-center justify-center gap-2">
-                Schedule Site Visit
+                Learn More
                 <svg
-                  className="w-4 h-4 sm:w-5 sm:h-5 group-hover:rotate-45 transition-transform"
+                  className="w-3.5 h-3.5 sm:w-4 sm:h-4 group-hover:rotate-45 transition-transform"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -203,43 +202,45 @@ export default function ResidentialPage() {
             </Link>
           </div>
 
-          {/* Statistics */}
-          <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 text-white/90">
-            <div className="text-center group">
-              <div className="relative">
-                <div className="text-3xl sm:text-4xl font-bold text-green-400 mb-2 group-hover:scale-110 transition-transform duration-300">
-                  500+
-                </div>
-                <div className="text-xs sm:text-sm font-medium text-white/80">
-                  Homes Powered
-                </div>
+          <div className="mt-8 sm:mt-12 grid grid-cols-3 gap-4 sm:gap-6 text-white/90">
+            <div className="text-center">
+              <div className="text-xl xs:text-2xl sm:text-4xl font-bold text-green-400 mb-1">
+                25+
+              </div>
+              <div className="text-[10px] xs:text-xs sm:text-sm">
+                Years Experience
               </div>
             </div>
-            <div className="text-center group">
-              <div className="relative">
-                <div className="text-3xl sm:text-4xl font-bold text-yellow-400 mb-2 group-hover:scale-110 transition-transform duration-300">
-                  ₹15k
-                </div>
-                <div className="text-xs sm:text-sm font-medium text-white/80">
-                  Average Monthly Savings
-                </div>
+            <div className="text-center">
+              <div className="text-xl xs:text-2xl sm:text-4xl font-bold text-yellow-400 mb-1">
+                1000+
+              </div>
+              <div className="text-[10px] xs:text-xs sm:text-sm">
+                Happy Customers
               </div>
             </div>
-            <div className="text-center group">
-              <div className="relative">
-                <div className="text-3xl sm:text-4xl font-bold text-green-400 mb-2 group-hover:scale-110 transition-transform duration-300">
-                  25yrs
-                </div>
-                <div className="text-xs sm:text-sm font-medium text-white/80">
-                  Warranty Coverage
-                </div>
+            <div className="text-center">
+              <div className="text-xl xs:text-2xl sm:text-4xl font-bold text-green-400 mb-1">
+                30%
+              </div>
+              <div className="text-[10px] xs:text-xs sm:text-sm">
+                Energy Savings
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Features Section */}
+        {/* Hide scroll indicator on very small screens */}
+        <div className="hidden sm:block absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="w-6 h-10 border-2 border-white/60 rounded-full flex justify-center">
+            <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+          </div>
+          <div className="text-white/60 text-xs mt-2 text-center">
+            Scroll Down
+          </div>
+        </div>
+      </section>
+      ;{/* Features Section */}
       <section className="py-12 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
@@ -253,41 +254,39 @@ export default function ResidentialPage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
-          {/* Features Grid - First 2 columns */}
-          <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 h-full">
-            {residentialFeatures.map((feature, index) => (
-              <div
-                key={index}
-                className="group bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg hover:border-emerald-200 transition-all duration-300 overflow-hidden h-[240px] flex flex-col"
-              >
-                <div className="p-6 flex flex-col h-full">
-                  {/* Icon and Metric Row */}
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="flex-shrink-0">
-                      <div className="relative w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-emerald-200 group-hover:scale-105 transition-all duration-300">
-                        <div className="text-white">
-                          {feature.icon}
+            {/* Features Grid - First 2 columns */}
+            <div className="md:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-4 h-full">
+              {residentialFeatures.map((feature, index) => (
+                <div
+                  key={index}
+                  className="group bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg hover:border-emerald-200 transition-all duration-300 overflow-hidden h-[240px] flex flex-col"
+                >
+                  <div className="p-6 flex flex-col h-full">
+                    {/* Icon and Metric Row */}
+                    <div className="flex items-start justify-between mb-4">
+                      <div className="flex-shrink-0">
+                        <div className="relative w-12 h-12 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-xl flex items-center justify-center shadow-md group-hover:shadow-emerald-200 group-hover:scale-105 transition-all duration-300">
+                          <div className="text-white">{feature.icon}</div>
                         </div>
                       </div>
+                      <span className="inline-flex items-center px-3 py-1 bg-emerald-50 rounded-full text-xs font-semibold text-emerald-700 whitespace-nowrap ml-3">
+                        {feature.metric}
+                      </span>
                     </div>
-                    <span className="inline-flex items-center px-3 py-1 bg-emerald-50 rounded-full text-xs font-semibold text-emerald-700 whitespace-nowrap ml-3">
-                      {feature.metric}
-                    </span>
+
+                    {/* Title */}
+                    <h3 className="text-lg font-bold text-gray-900 group-hover:text-emerald-700 transition-colors mb-3 leading-tight">
+                      {feature.title}
+                    </h3>
+
+                    {/* Description - Takes remaining space */}
+                    <p className="text-sm text-gray-600 leading-relaxed flex-1 line-clamp-6">
+                      {feature.description}
+                    </p>
                   </div>
-
-                  {/* Title */}
-                  <h3 className="text-lg font-bold text-gray-900 group-hover:text-emerald-700 transition-colors mb-3 leading-tight">
-                    {feature.title}
-                  </h3>
-
-                  {/* Description - Takes remaining space */}
-                  <p className="text-sm text-gray-600 leading-relaxed flex-1 line-clamp-6">
-                    {feature.description}
-                  </p>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
 
             {/* Image Slider - Last 2 columns */}
             <div className="md:col-span-2 h-full flex">
@@ -298,7 +297,6 @@ export default function ResidentialPage() {
           </div>
         </div>
       </section>
-
       {/* CTA Section */}
       <div className="bg-gradient-to-r from-emerald-600 to-emerald-700 w-full relative overflow-hidden">
         <div className="absolute inset-0 bg-black/5"></div>
@@ -329,7 +327,6 @@ export default function ResidentialPage() {
           </div>
         </div>
       </div>
-
       {/* Pricing Section */}
       <section className="py-16 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -405,9 +402,8 @@ export default function ResidentialPage() {
           </div>
         </div>
       </section>
-
       {/* Customer Testimonials */}
-        <Clients/>
+      <Clients />
     </div>
   );
 }
