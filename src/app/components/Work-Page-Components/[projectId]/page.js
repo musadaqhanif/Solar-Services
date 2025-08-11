@@ -2,8 +2,8 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import SectionHeading from "@/app/components/Shared/SectionHeading";
-import { services, categories } from "../servicesData"; 
-import AnimatedWrapper from "../AnimatedServiceDetail"; // ✅ Import wrapper
+import { services, categories } from "../servicesData";
+import AnimatedWrapper from "../AnimatedServiceDetail";
 
 export default function ProjectDetailPage({ params }) {
   const service = services.find((s) => s.id === parseInt(params.projectId));
@@ -28,13 +28,17 @@ export default function ProjectDetailPage({ params }) {
     <div className="min-h-screen bg-white pb-16 pt-32">
       <div className="mx-auto max-w-5xl px-4">
         <AnimatedWrapper className="mb-8 rounded-xl bg-white p-8 shadow-lg shadow-green-100">
-          <Image
-            src={service.image}
-            alt={service.title}
-            width={800}
-            height={384}
-            className="mb-8 rounded-lg object-cover shadow-md"
-          />
+          {/* Fixed aspect ratio container */}
+          <div className="relative mb-8 aspect-video w-full overflow-hidden rounded-lg shadow-md">
+            <Image
+              src={service.image}
+              alt={service.title}
+              fill
+              className="object-cover"
+              sizes="(max-width: 768px) 100vw, 80vw"
+            />
+          </div>
+
           <h1 className="mb-4 text-4xl font-bold leading-tight text-gray-900 md:text-5xl">
             {service.title}
           </h1>
@@ -50,7 +54,7 @@ export default function ProjectDetailPage({ params }) {
           <div className="rounded-lg bg-gray-100 p-6">
             <SectionHeading
               title="Service Highlights"
-              highlightWord="Highlights"
+              highlightWord="Service Highlights"
               textAlignment="left"
               className="!mb-4 !text-left"
             />
@@ -96,4 +100,3 @@ export async function generateStaticParams() {
     projectId: service.id.toString(),
   }));
 }
-

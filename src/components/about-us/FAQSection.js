@@ -34,7 +34,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full min-h-screen py-12 md:py-24 px-4 sm:px-12 lg:px-18 bg-gray-50 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
+    <section className="w-full min-h-screen py-12 md:py-24 px-4 sm:px-12 lg:px-18 bg-gray-50 flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 ">
       {/* Left Side - Image */}
       <Image
         src="/FAQ1.jpg"
@@ -47,7 +47,7 @@ export default function FAQSection() {
 
       {/* Right Side - FAQ */}
       <div className="w-full lg:w-1/2 lg:pl-8 xl:pl-12">
-        <h2 className="text-2xl md:text-3xl xl:text-3xl font-bold text-green-600 mb-6 md:mb-8">
+        <h2 className="text-2xl md:text-3xl xl:text-3xl font-bold text-green-600 mb-6 md:mb-8 text-center lg:text-left">
           Frequently Asked Questions
         </h2>
         <div className="space-y-4">

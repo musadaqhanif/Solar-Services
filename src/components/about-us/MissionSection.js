@@ -5,7 +5,7 @@ export default function MissionSection() {
     <section className="w-full min-h-screen py-14 md:py-24 px-4 sm:px-12 lg:px-18 bg-white flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16">
       {/* Text Content - Responsive padding adjustments */}
       <div className="w-full lg:w-1/2 lg:pr-8 xl:pr-12 lg:text-left">
-        <h2 className="text-2xl md:text-3xl xl:text-3xl font-bold text-green-600 mb-6 md:mb-8">
+        <h2 className="text-2xl md:text-3xl xl:text-3xl font-bold text-center lg:text-left text-green-600 mb-6 md:mb-8">
           Our Mission & Vision
         </h2>
         <ul className="text-gray-700 text-base md:text-lg lg:text-xl list-disc pl-5 space-y-3 md:space-y-4">
