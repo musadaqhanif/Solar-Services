@@ -3,22 +3,22 @@ export const categories = [
   {
     id: "all",
     name: "All sevices",
-    icon: <FaLeaf className="text-2xl text-green-600" />,
+    icon: <FaLeaf className="text-2xl" />,
   },
   {
     id: "installation",
     name: "Installation",
-    icon: <FaSun className="text-2xl text-green-600" />,
+    icon: <FaSun className="text-2xl" />,
   },
   {
     id: "design",
     name: "Design & Consultation",
-    icon: <FaTools className="text-2xl text-green-600" />,
+    icon: <FaTools className="text-2xl" />,
   },
   {
     id: "maintenance",
     name: "Maintenance & Monitoring",
-    icon: <FaChartLine className="text-2xl text-green-600" />,
+    icon: <FaChartLine className="text-2xl" />,
   },
 ];
 
