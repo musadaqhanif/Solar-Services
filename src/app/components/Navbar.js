@@ -23,9 +23,9 @@ export default function Navbar() {
     {
       name: "Our Services",
       dropdown: [
-        { name: "Commercial Solar Installation", href: "/services/commercial" },
-        { name: "Residential Solar Installation", href: "/services/resedential" },
-        { name: "Industrial Solar Installation", href: "/services/industrial" },
+        { name: "Commercial Solar", href: "/services/commercial" },
+        { name: "Residential Solar", href: "/services/resedential" },
+        { name: "Industrial Solar", href: "/services/industrial" },
       ],
     },
     { name: "Projects", href: "/components/Work-Page-Components" },
@@ -149,7 +149,9 @@ export default function Navbar() {
                     className="w-full flex justify-between items-center text-green-600 hover:text-yellow-500 px-4 py-2 text-base font-medium rounded-md transition-all duration-200"
                   >
                     {item.name}
-                    <span>{isServicesOpenMobile === item.name ? "▲" : "▼"}</span>
+                    <span>
+                      {isServicesOpenMobile === item.name ? "▲" : "▼"}
+                    </span>
                   </button>
                   {isServicesOpenMobile === item.name && (
                     <div className="pl-6">

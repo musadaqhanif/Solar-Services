@@ -1,19 +1,19 @@
-'use client';
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { services, categories } from './Work-Page-Components/servicesData';
-import Link from 'next/link';
-import Image from 'next/image';
-import SectionHeading from '@/app/components/Shared/SectionHeading';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+"use client";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { services, categories } from "./Work-Page-Components/servicesData";
+import Link from "next/link";
+import Image from "next/image";
+import SectionHeading from "@/app/components/Shared/SectionHeading";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function OurWorkPage() {
-  const [activeCategory, setActiveCategory] = useState('all');
+  const [activeCategory, setActiveCategory] = useState("all");
 
   const filteredServices =
-    activeCategory === 'all'
+    activeCategory === "all"
       ? services
       : services.filter((service) => service.category === activeCategory);
 
@@ -53,9 +53,10 @@ export default function OurWorkPage() {
           transition={{ duration: 0.6 }}
           className="mb-12 text-center text-green-600"
         >
-          <SectionHeading  title="Our " highlightWord="Projects" />
+          <SectionHeading title="Our " highlightWord="Projects" />
           <p className="mx-auto max-w-2xl text-lg text-gray-600">
-            Explore our comprehensive solar installation services designed to power your future with clean energy.
+            Explore our comprehensive solar installation services designed to
+            power your future with clean energy.
           </p>
         </motion.div>
 
@@ -93,11 +94,19 @@ export default function OurWorkPage() {
                 onClick={() => setActiveCategory(category.id)}
                 className={`flex items-center gap-2 rounded-full px-6 py-3 transition-all duration-300 ${
                   activeCategory === category.id
-                    ? 'bg-yellow-500 text-white shadow-lg'
-                    : 'bg-green-600 text-white hover:bg-yellow-500'
+                    ? "bg-yellow-500 text-white shadow-lg"
+                    : "bg-green-600 text-white hover:bg-yellow-500"
                 }`}
               >
-                {category.icon}
+                <span
+                  className={`text-2xl ${
+                    activeCategory === category.id
+                      ? "text-green-600" // Green icon when active
+                      : "text-yellow-400" // Yellow icon when inactive
+                  }`}
+                >
+                  {category.icon}
+                </span>
                 <span>{category.name}</span>
               </button>
             ))}
@@ -119,7 +128,10 @@ export default function OurWorkPage() {
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   className="overflow-hidden rounded-xl bg-white shadow-lg shadow-green-100 transition-shadow duration-300 hover:shadow-xl"
                 >
-                  <Link href={`/components/Work-Page-Components/${service.id}`} className="block">
+                  <Link
+                    href={`/components/Work-Page-Components/${service.id}`}
+                    className="block"
+                  >
                     <div className="relative h-64 overflow-hidden">
                       <Image
                         src={service.image}
@@ -130,17 +142,27 @@ export default function OurWorkPage() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 transition-opacity duration-300 hover:opacity-100">
                         <div className="absolute bottom-4 left-4 right-4 text-white">
-                          <h3 className="mb-2 text-xl font-semibold">{service.title}</h3>
-                          <p className="text-sm opacity-90">{service.description}</p>
+                          <h3 className="mb-2 text-xl font-semibold">
+                            {service.title}
+                          </h3>
+                          <p className="text-sm opacity-90">
+                            {service.description}
+                          </p>
                         </div>
                       </div>
                     </div>
                   </Link>
                   <div className="p-6">
                     <div className="mb-3 flex items-center gap-2">
-                      {categories.find((cat) => cat.id === service.category)?.icon}
+                      {
+                        categories.find((cat) => cat.id === service.category)
+                          ?.icon
+                      }
                       <span className="font-medium text-green-600">
-                        {categories.find((cat) => cat.id === service.category)?.name}
+                        {
+                          categories.find((cat) => cat.id === service.category)
+                            ?.name
+                        }
                       </span>
                     </div>
                     <h3 className="mb-2 text-xl font-semibold text-gray-800">
